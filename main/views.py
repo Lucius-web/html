@@ -1,9 +1,8 @@
 from django.shortcuts import render
-
+from main.models import Banner
 # Create your views here.
-def main(request):
-  context = {
-    "title": "Geeks-student"
-  }
 
-  return render(request, 'index.html', context = context)
+def banner(request):
+  banner = Banner.objects.latest("id")
+  return render(request, 'index.html', locals())
+

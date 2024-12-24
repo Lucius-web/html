@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <header>
+  <head>
     <title>Geeks-student</title>
-  </header>
+    <style>
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
 
   <body>
-      <div>
-        <img src="https://lh3.googleusercontent.com/pw/AP1GczPeIM-r1bYGU2DbElrUsWefXwhuewNZNFGEx2yDVybaPhBqEOHc4oM5xqH12LNVOrqI8HcMeqZRDk-oj3-hgcD5nizwQ-fO9digkmQtDtbNCZAcKuHQo7cWui-E_b75s8_8E0JrzzsP42AL6bKEYf6D=w347-h463-s-no" width="250px" height="330" alt="">
-        <h2>Akmalidin Murzaev</h2>
-        <h5>Backend developer</h5>
-        <p>студент 4-го месяца</p>
-      </div>
+
+    <!-- Display the image and information in the div below -->
+    <div>
+      <!-- Add image src attribute to point to the image URL -->
+      <img src="{{ banner.image.url }}" width="250px" height="330" alt="Banner Image">
+      <h2>{{ banner.title }}</h2>
+      <h5>{{ banner.description }}</h5>
+    </div>
   </body>
 </html>
