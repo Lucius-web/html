@@ -1,4 +1,6 @@
 from django.db import models
+ 
+  
 
 # Create your models here.
 class Banner(models.Model):
@@ -22,3 +24,4 @@ class Banner(models.Model):
   class Meta:
     verbose_name = "баннер"
     verbose_name_plural = "баннера"
+
